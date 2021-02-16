@@ -65,6 +65,22 @@ function startMatch() {
     wordInput.value = '';
     score++;
   }
+  
+  if (typeof sessionStorage['highscore'] === 'undefined' || score > sessionStorage['highscore']) {
+    sessionStorage['highscore'] = score;
+  } else {
+    sessionStorage['highscore'] = sessionStorage['highscore'];
+  }
+
+  if (sessionStorage['highscore'] >= 0) {
+  highscoreDisplay.innerHTML = sessionStorage['highscore'];
+  }
+
+  if (score === -1) {
+    scoreDisplay.innerHTML = 0;
+  } else {
+    scoreDisplay.innerHTML = score;
+  }
 }
 
 function matchWords() {
