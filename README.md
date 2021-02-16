@@ -1,4 +1,4 @@
-# Word Beater - A Vanilla JS Speed Typer Game - Built by Christopher Liang
+# Word Beater - A Vanilla JS Speed Typer Game
 
 Features
 - Score Keeper for amount of words typed correctly
